@@ -1,0 +1,107 @@
+Section 1
+
+1. How do I turn helloworld.c, a C source file, into helloworld.o, an object file?
+
+(A) gcc helloworld.c
+(B) gcc -o helloworld.c
+(C) gcc -O helloworld.c
+(D) gcc -c helloworld.c
+(E) None of the above
+
+2. What does the following code print out?
+
+int main(int argc, char *argv[]) {
+    int b;
+    for (b = 'a'; b <= 'e'; b++) {
+        printf("%c", b);
+    }
+    return EXIT_SUCCESS;
+}
+
+(A) a
+(B) abcde
+(C) abcdef
+(D) 979899100101
+(E) None of the above
+
+3. At what line is the potential segfault located?
+
+1 void freeList(NodeT *head) {
+2     NodeT *cur = head;
+3     while (cur != NULL) {
+4         free(cur);
+5         cur = cur->next;
+6     }
+7 }
+
+(A) 1
+(B) 3
+(C) 4
+(D) 5
+(E) None of the above
+
+4. The average execution time of quicksort is
+
+(A) Linear O(N)
+(B) Logarithmic O(log N)
+(C) Linear-Logarithmic O(N * log N)
+(D) Quadratic O(N^2)
+(E) None of the above
+
+5. Data within a linked list struct is accessible with "cur->data". The equivalent data can also be accessed with
+
+(A) *cur.data
+(B) (*cur).data
+(C) cur.*data
+(D) cur.(*data)
+(E) None of the above
+
+6. Consider the following program:
+
+void foo(char *array) {
+    printf("%d\n", sizeof(array));
+}
+
+int main(int argc, char *argv[]) {
+    char a[3] = {0};
+    printf("%d\n", sizeof(a));
+    foo(a);
+    return EXIT_SUCCESS;
+}
+
+Assume the program runs and compiles successfully. If this program was run on a CSE machine (where pointers are 4 bytes in size), what would the output be?
+
+(A) 4 and 4
+(B) 3 and 3
+(C) 3 and 4
+(D) 4 and 3
+(E) None of the above
+
+7. I invent a washing machine which is programmable with C. For some reason, chars are now 2 bytes instead of 1. Also assume that I have declared the following variables:
+
+char *str = "Hello World!";
+char *heapStr = ...
+
+What is the correct command to allocate enough space to store str? Assume the answer fits into the ... bit.
+
+(A) (char *) malloc(strlen(str) + 1);
+(B) (char *) malloc(strlen(str) + 1 * sizeof(char));
+(C) (char *) malloc((strlen(str) + 1) * sizeof(char));
+(D) (char *) malloc(sizeof(str) + 1 * sizeof(char));
+(E) None of the above
+
+8. How can a struct with the type "Person" be defined?
+
+(A) struct Person {
+        ...
+    };
+(B) typedef struct Person {
+        ...
+    };
+(C) struct Person {
+        ...
+    } Person;
+(D) typedef struct Person {
+        ...
+    } Person;
+(E) None of the above
