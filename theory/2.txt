@@ -1,0 +1,37 @@
+Section 2
+
+Question 1
+Consider a data type which stores information about m * m square matrices.
+
+a) Define a struct (or typedef struct) which can hold information about a square matrix of size m * m. Assume the matrix data comprises of integers.
+b) Write a corresponding function newMatrix which creates this matrix and returns it.
+c) Write a freeMatrix function which frees any memory allocated to the matrix.
+d) Assume I have made a 4 * 4 matrix with your newMatrix function. How would I change the second row, second column to an arbitrary integer, like 6?
+
+Hint: read the entire question before thinking about how to approach the problem.
+
+Question 2
+Consider the following binary search tree for parts (a) to (c):
+
+      9
+     / \
+    /   \
+   /     \
+  5      22
+ / \     / \
+1   8   /   \
+ \     16   25
+  4     \
+        20
+
+a) What is the height of the tree?
+b) Give the tree in preorder or prefix order.
+c) Give the tree in postorder or postfix order, AFTER the root node, 9, is deleted.
+
+d) Given a list of numbers 9 5 22 1 8, show each step of a selection sort, also showing the number of comparisons and swaps which occurred at each step. Use the table as a template:
+
+Numbers | Comparisons | Swaps
+--------+-------------+------
+your    | data        | here
+
+etc.
