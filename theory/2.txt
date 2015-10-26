@@ -3,12 +3,12 @@ Section 2
 Question 1
 Consider a data type which stores information about m * m square matrices.
 
+Hint: read the entire question before thinking about how to approach the problem.
+
 a) Define a struct (or typedef struct) which can hold information about a square matrix of size m * m. Assume the matrix data comprises of integers.
 b) Write a corresponding function newMatrix which creates this matrix and returns it.
 c) Write a freeMatrix function which frees any memory allocated to the matrix.
 d) Assume I have made a 4 * 4 matrix with your newMatrix function. How would I change the second row, second column to an arbitrary integer, like 6?
-
-Hint: read the entire question before thinking about how to approach the problem.
 
 Question 2
 Consider the following binary search tree for parts (a) to (c):
