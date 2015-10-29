@@ -1,0 +1,18 @@
+typedef struct matrix {
+    int size;
+	int **numbers;
+} Matrix;
+
+Matrix *newMatrix(int size) {
+	Matrix *m = (Matrix *) malloc(sizeof(Matrix));
+	m->numbers = (int **) malloc(size * size * sizeof(int));
+	m->size = size;
+	return m;
+}
+
+void freeMatrix(Matrix *m) {
+	free(m->numbers);
+	free(m);
+}
+
+int element = m->numbers[1][1];
