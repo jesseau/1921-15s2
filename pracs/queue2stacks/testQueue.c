@@ -4,7 +4,7 @@
 #include "Stack.h"
 #include "Queue.h"
 
-#define TEST1 10
+#define TEST1 5000
 
 int main(int argc, char *argv[]) {
     printf("Creating queue... ");
